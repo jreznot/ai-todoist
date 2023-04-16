@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy jar file and application.properties to container
-COPY target/my-application.jar .
+COPY build/libs/my-application.jar .
 COPY src/main/resources/application.properties .
 
 # Expose port
